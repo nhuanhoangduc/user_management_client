@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
+import PgUserList from './pages/PgUserList';
+import PgUserUpdate from './pages/PgUserUpdate';
 import PgUserCreate from './pages/PgUserCreate';
+
 
 class App extends Component {
     render() {
@@ -17,10 +20,10 @@ class App extends Component {
 
                 {/* Body */}
                 <BrowserRouter>
-                    {/* here's a div */}
-                    <div>
-                        {/* here's a Route */}
-                        <Route path="/" component={PgUserCreate} />
+                    <div className="container">
+                        <Route exact path="/" component={PgUserList} />
+                        <Route exact path="/create" component={PgUserCreate} />
+                        <Route exact path="/update/:id" component={PgUserUpdate} />
                     </div>
                 </BrowserRouter>
             </div>
