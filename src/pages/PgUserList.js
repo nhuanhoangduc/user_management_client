@@ -49,11 +49,13 @@ class PgUserList extends Component {
         this.state = {};
     }
 
+
     async getUsers() {
         // Get all users
         const users = await UserApi.getUsers();
         this.setState({ users });
     }
+    
 
     componentDidMount() {
         this.getUsers();
