@@ -13,7 +13,7 @@ class App extends Component {
                 {/* Header */}
                 <header>
                     <nav className="navbar navbar-light bg-light">
-                        <a className="navbar-brand" href="/">Navbar</a>
+                        <a className="navbar-brand" href="/">User management</a>
                     </nav>
                 </header>
 
