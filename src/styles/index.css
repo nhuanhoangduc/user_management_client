@@ -1,0 +1,17 @@
+.flex {
+    display: flex;
+}
+
+.flex-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.bg-gray {
+    background-color: #ecf0f1;
+}
