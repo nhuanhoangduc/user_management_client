@@ -20,7 +20,7 @@ class App extends Component {
 
                 {/* Body */}
                 <BrowserRouter>
-                    <div className="container">
+                    <div className="container p-3">
                         <Route exact path="/" component={PgUserList} />
                         <Route exact path="/create" component={PgUserCreate} />
                         <Route exact path="/update/:id" component={PgUserUpdate} />
